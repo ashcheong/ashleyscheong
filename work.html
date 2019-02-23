@@ -76,11 +76,19 @@
 					</div>
 					<div class="row">
 						<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
-							<div class="project" style="background-image: url(images/work-1.jpg);">
-								<div class="desc">
-									<div class="con">
-										<h3><a href="work-single.html">Work 01</a></h3>
-										<span>Branding, Ilustration</span>
+							<figure class="video-player">
+  <video preload="none" width="1280" height="720" poster="">
+    <source src="videos/Shez Mirror.mp4" type="video/mp4" />
+  </video>
+  <button class="play-toggle">Toggle play</button>
+  <button class="mute-toggle">Toggle mute</button>
+</figure>
+<script>
+  // Initialize video player
+  new VideoPlayer({
+    element: document.querySelector('.video-player')
+  });
+</script>
 										
 									</div>
 								</div>
