@@ -1064,7 +1064,7 @@ body.offcanvas {
   transition: 0.5s; }
 
 .portfolio-vid {
-  padding: 2em 0;
+  margin: 2em 0;
 }
   @media screen and (max-width: 768px) {
     .colorlib-nav-toggle {
