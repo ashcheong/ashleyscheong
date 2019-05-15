@@ -65,41 +65,41 @@
 
 	<!DOCTYPE html>
 <html>
+<title>W3.CSS</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+.mySlides {display:none}
+.w3-left, .w3-right, .w3-badge {cursor:pointer}
+.w3-badge {height:13px;width:13px;padding:0}
+</style>
 <body>
-<br>
-<br>
-<br>
 
-<div class="w3-content" style="max-width:500px; margin-right:270px">
-  <img class="mySlides" src="images/beach.JPG" style="width:100%;display:none">
+<div class="w3-content w3-display-container" style="max-width:800px">
+  <img class="mySlides" src="images/beach.JPG" style="width:100%">
   <img class="mySlides" src="images/bridge.JPG" style="width:100%">
-  <img class="mySlides" src="images/flower.JPG" style="width:100%;display:none">
-  <img class="mySlides" src="images/4.JPG" style="width:100%;display:none">
-  <img class="mySlides" src="images/5.JPG" style="width:100%;display:none">
-
-  <div class="w3-row-padding w3-section">
-    <div class="w3-col s4">
-      <img class="demo w3-opacity w3-hover-opacity-off" src="images/beach.JPG" style="width:100%;cursor:pointer" onclick="currentDiv(1)">
-    </div>
-    <div class="w3-col s4">
-      <img class="demo w3-opacity w3-hover-opacity-off" src="images/bridge.JPG" style="width:100%;cursor:pointer" onclick="currentDiv(2)">
-    </div>
-    <div class="w3-col s4">
-      <img class="demo w3-opacity w3-hover-opacity-off" src="images/flower.JPG" style="width:100%;cursor:pointer" onclick="currentDiv(3)">
-    </div>
-    <div class="w3-col s4">
-      <img class="demo w3-opacity w3-hover-opacity-off" src="images/4.JPG" style="width:100%;cursor:pointer" onclick="currentDiv(4)">
-    </div>
-    <div class="w3-col s4">
-      <img class="demo w3-opacity w3-hover-opacity-off" src="images/5.JPG" style="width:100%;cursor:pointer" onclick="currentDiv(5)">
-    </div>
+  <img class="mySlides" src="images/flower.JPG" style="width:100%">
+  <img class="mySlides" src="images/4.JPG" style="width:100%">
+  <img class="mySlides" src="images/5.JPG" style="width:100%">
+  <div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:100%">
+    <div class="w3-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
+    <div class="w3-right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
+    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
+    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
+    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
+    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(4)"></span>
+    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(5)"></span>
   </div>
 </div>
-	</center>
 
 <script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
 function currentDiv(n) {
   showDivs(slideIndex = n);
 }
@@ -111,18 +111,19 @@ function showDivs(n) {
   if (n > x.length) {slideIndex = 1}
   if (n < 1) {slideIndex = x.length}
   for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";
+    x[i].style.display = "none";  
   }
   for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" w3-opacity-off", "");
+    dots[i].className = dots[i].className.replace(" w3-white", "");
   }
-  x[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " w3-opacity-off";
+  x[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " w3-white";
 }
 </script>
 
 </body>
-</html>
+</html> 
+
 
 
 
