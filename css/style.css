@@ -84,8 +84,7 @@ a {
   @media (min-width: 768px) {
     .site-section {
       padding: 0em;
-    margin-right: -60px;
-    margin-top: -50px;} }
+    margin-right: -60px;} }
   .site-section.site-section-sm {
     padding: 4em 0; }
 
