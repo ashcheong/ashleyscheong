@@ -215,7 +215,8 @@ a {
 .site-navbar {
   margin-bottom: 0px;
   z-index: 9;
-  position: relative; }
+  position: relative;
+margin-left:-70px;}
   .site-navbar.transparent {
     background: transparent; }
   .site-navbar.absolute {
