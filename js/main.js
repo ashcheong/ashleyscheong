@@ -9,8 +9,8 @@ jQuery(document).ready(function($) {
 	"use strict";
 	var width = $(window).width();
 	if ( width <= 480 ) {
-		console.log('this is working')
 		$("body > div > div:nth-child(5) > div > div > div > div:nth-child(2) > div").removeClass("ml-auto");
+		$(".row").css({"margin-left": 0});
 	}
 	
 
