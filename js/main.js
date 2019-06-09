@@ -7,8 +7,8 @@
 jQuery(document).ready(function($) {
 
 	"use strict";
-	
-	if ($( window ).width() <= 480px) {
+	var width = $(window).width();
+	if ( width <= 480px) {
 		console.log('this is working')
 		$("body > div > div:nth-child(5) > div > div > div > div:nth-child(2) > div").removeClass("ml-auto");
 	}
