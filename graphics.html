@@ -5,6 +5,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
+    <link rel="shortcut icon" type="image/jpg" href="images/siteicon.jpg"/>
+    
     <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300i,400,700" rel="stylesheet">
     <link rel="stylesheet" href="fonts/icomoon/style.css">
 
@@ -37,7 +39,13 @@
           <span class="icon-close2 js-menu-toggle"></span>
         </div>
       </div>
-      <div class="site-mobile-menu-body"></div>
+      <div class="site-mobile-menu-body"><ul class="site-nav-wrap">
+                <li><a href="/">Home</a></li>
+                <li><a href="/videos">Videos</a></li>
+                <li><a href="/photos">Photos</a></li>
+                <li class="active"><a href="/graphics">Graphics</a></li>
+                <li><a href="mailto:ashcheong@gmail.com">Email</a></li>
+	      </ul></div>
     </div>
     
 
@@ -55,17 +63,27 @@
             <nav class="site-navigation position-relative text-right text-lg-center" role="navigation">
 
               <ul class="site-menu js-clone-nav mx-auto d-none d-lg-block">
-                <li class="active"><a href="about.html">Home</a></li>
-                <li>
-                  <a href="videos.html">Videos</a>
-                </li>
-                <li><a href="work.html">Photos</a></li>
+                <li><a href="/">Home</a></li>
+                <li><a href="/videos">Videos</a></li>
+                <li><a href="/photos">Photos</a></li>
+                <li class="active"><a href="/graphics">Graphics</a></li>
                 <li><a href="mailto:ashcheong@gmail.com">Email</a></li>
               </ul>
             </nav>
           </div>
+		
+  <div class="col-6 col-xl-2 text-right aos-init aos-animate" data-aos="fade-down">
+            <div class="d-none d-xl-inline-block">
+              
+            </div>
 
-       
+            <div class="d-inline-block d-xl-none ml-md-0 mr-auto py-3" style="position: relative; top: 3px;"><a href="#" class="site-menu-toggle js-menu-toggle text-black"><span class="icon-menu h3"></span></a></div>
+
+     
+            </div>
+          </div>
+        </div>
+        
 
         </div>
       </div>
@@ -74,31 +92,47 @@
 
 
 
-  <div class=""  data-aos="fade">
-    <div class="container-fluid">
-      
-      <div class="row justify-content-center">
-        <div class="col-md-7">
-          <div class="row mb-5 site-section">
-            <div class="col-12 ">
-              <h2 class="site-section-heading text-center">About Me</h2>
-            </div>
-          </div>
+<div class="w3-container">
+</div>
 
-          <div class="row mb-5">
-            <div class="col-md-7">
-              <img src="images/one.JPG" alt="Images" class="img-fluid">
-            </div>
-            <div class="col-md-4 ml-auto">
-              <h3>Hello!</h3>
-              <p>My name is Ashley S. Cheong and I am a small Korean-American gal whose brain is overflowing with creativity. For most of my college years, I thought I wanted to work in editorial for some kind of well-known magazine company as in The Devil Wears Prada. However, as soon as I graduated as an English - Creative Writing major, I realized my love for digital content. This is my pursuit of happiness.</p>
-            </div>
-          </div>
+<div class="w3-content" style="max-width:1200px">
+  <img class="mySlides" src="images/SNB1.png" style="width:100%;display:none">
+  <img class="mySlides" src="images/SNB2.png" style="width:100%">
 
-         
-    
-      </div>
+
+  <div class="w3-row-padding w3-section">
+    <div class="w3-col s4">
+      <img class="demo w3-opacity w3-hover-opacity-off" src="images/SNB1.png" style="width:100%;cursor:pointer" onclick="currentDiv(1)">
     </div>
+    <div class="w3-col s4">
+      <img class="demo w3-opacity w3-hover-opacity-off" src="images/SNB2.png" style="width:100%;cursor:pointer" onclick="currentDiv(2)">
+    </div>
+  </div>
+</div>
+
+<script>
+function currentDiv(n) {
+  showDivs(slideIndex = n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" w3-opacity-off", "");
+  }
+  x[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " w3-opacity-off";
+}
+</script>
+
+
     
 
     
