@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html><head><title>Ashley S. Cheong</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-
 	
 
     <link rel="shortcut icon" type="image/jpg" href="images/siteicon.jpg"/>
@@ -28,8 +27,60 @@
     <link rel="stylesheet" href="css/aos.css">
 
     <link rel="stylesheet" href="css/style.css">
-    
-  </head>
+	
+	 <style>
+		body {
+  font-family: Arial;
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  vertical-align: middle;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+  position: relative;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 25%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+	</style></head>
   <body>
   
   <div class="site-wrap">
@@ -91,12 +142,7 @@
       
     </header>
 
-	<center>
-	<!-- Container for the image gallery -->
-<div class="container">
-
-  <!-- Full-width images with number text -->
-  <div class="mySlides" style="display: block;">
+	<div class="mySlides" style="display: block;">
       <img src="images/SNB1.png" style="width:100%;margin-top:30px;">
   </div>
 
@@ -112,12 +158,7 @@
       <img src="images/bcback.png" style="width:100%;margin-top:30px;">
   </div>
 
-
-  <!-- Thumbnail images -->
-  <div class="row" style="
-    margin-right: -300px;
-    margin-bottom: 10px;
-">
+  <div class="row">
     <div class="column">
       <img class="demo cursor active" src="images/SNB1.png" style="width:100%" onclick="currentSlide(1)">
     </div>
@@ -131,9 +172,7 @@
       <img class="demo cursor" src="images/bcback.png" style="width:100%" onclick="currentSlide(4)">
     </div>
   </div>
-</div>
 
-	</center>
   
 
   <script src="js/jquery-3.3.1.min.js"></script>
