@@ -1202,3 +1202,7 @@ body {
   display: table;
   clear: both;
 }
+
+ $(document).ready(function(){
+      $('#lightgallery').lightGallery();
+    });
