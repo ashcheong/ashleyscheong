@@ -244,7 +244,7 @@ a {
       padding: 10px 5px; }
       .site-navbar .site-navigation .site-menu > li > a {
         padding: 10px 10px;
-        text-transform: uppercase;
+        text-transform: lowercase;
         letter-spacing: .1em;
         color: #000;
         font-size: 12px;
@@ -332,7 +332,7 @@ a {
             background: #f4f5f9;
             color: #25262a; }
       .site-navbar .site-navigation .site-menu .has-children a {
-        text-transform: uppercase; }
+        text-transform: lowercase; }
       .site-navbar .site-navigation .site-menu .has-children:hover > a, .site-navbar .site-navigation .site-menu .has-children:focus > a, .site-navbar .site-navigation .site-menu .has-children:active > a {
         color: #20c997; }
       .site-navbar .site-navigation .site-menu .has-children:hover, .site-navbar .site-navigation .site-menu .has-children:focus, .site-navbar .site-navigation .site-menu .has-children:active {
@@ -396,7 +396,7 @@ a {
       margin-left: 0px; }
       .site-mobile-menu .site-mobile-menu-header .site-mobile-menu-logo a {
         display: inline-block;
-        text-transform: uppercase; }
+        text-transform: lowercase; }
         .site-mobile-menu .site-mobile-menu-header .site-mobile-menu-logo a img {
           max-width: 70px; }
         .site-mobile-menu .site-mobile-menu-header .site-mobile-menu-logo a:hover {
@@ -799,7 +799,7 @@ a {
     transform: scale(1.2); }
 
 .site-block-tab .nav-item {
-  text-transform: uppercase;
+  text-transform: lowercase;
   font-size: 0.8rem;
   margin: 0 20px; }
   .site-block-tab .nav-item:first-child {
@@ -913,7 +913,7 @@ a {
     position: relative;
     top: -100px; }
     .block-12 .text .meta {
-      text-transform: uppercase;
+      text-transform: lowercase;
       padding-left: 40px;
       color: #fff;
       display: block;
@@ -1040,11 +1040,11 @@ a {
   .player h2 {
     font-size: 20px;
     letter-spacing: .2em;
-    text-transform: uppercase; }
+    text-transform: lowercase; }
   .player .position {
     font-size: 14px;
     color: #b3b3b3;
-    text-transform: uppercase; }
+    text-transform: lowercase; }
 
 .site-block-27 ul, .site-block-27 ul li {
   padding: 0;
@@ -1126,7 +1126,7 @@ a {
     border-color: #fff;
     color: #fff;
     border-width: 2px;
-    text-transform: uppercase;
+    text-transform: lowercase;
     font-size: 11px;
     letter-spacing: .1em; }
     .swiper-container .btn-outline-white:hover {
