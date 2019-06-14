@@ -1,7 +1,7 @@
 @font-face {
-    font-family: 'baby_wildy_personalregular';
-    src: url(“https://www.ashleycheong.com/fonts/baby_wildly/baby_wildy_personal_use-webfont.woff2”) format('woff2'),
-         url(“https://www.ashleycheong.com/fonts/baby_wildly/baby_wildy_personal_use-webfont.woff”) format('woff');
+    font-family: 'Baby Wildy Personal Use';
+    src: url("fonts/baby_wildly/baby_wildy_personal_use-webfont.woff2”) format('woff2'),
+         url("fonts/baby_wildly/baby_wildy_personal_use-webfont.woff”) format('woff');
     font-weight: normal;
     font-style: normal;
 
