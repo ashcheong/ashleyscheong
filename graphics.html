@@ -3,11 +3,11 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 	
 
-    <link rel="shortcut icon" type="image/jpg" href="images/siteicon.jpg"/>
+    <link rel="shortcut icon" type="image/jpg" href="images/siteicon.jpg">
 
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     
-    <link href="https://fonts.googleapis.com/css?family=Sarina&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Sarina&amp;display=swap" rel="stylesheet">
     <link rel="stylesheet" href="fonts/icomoon/style.css">
 
     <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -45,6 +45,39 @@ display: block;
 margin-left: auto;
 margin-right: auto;
 }
+         
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 80%;
+  width: 100%;
+  opacity: 0;
+  background-color: white;
+}
+
+
+.container:hover .image {
+  opacity: 0.1;
+}
+
+.container:hover .overlay {
+  opacity: 10;
+}
+
+.text {
+  text-align: center;
+  color: black;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+         
 /* Position the image container (needed to position the left and right arrows) */
 .container {
   position: relative;
@@ -75,8 +108,8 @@ margin-right: auto;
 .demo:hover {
   opacity: 1;
 }
-	</style></head>
-  <body>
+	</style><style type="text/css">.c1-ui-state-hover {background-color:yellow !important; padding:5px !important }</style></head>
+  <body data-aos-easing="slide" data-aos-duration="800" data-aos-delay="0">
   
   <div class="site-wrap">
 
@@ -103,10 +136,10 @@ margin-right: auto;
       <div class="container-fluid">
         <div class="row align-items-center">
           
-          <div class="col-6 col-xl-2" data-aos="fade-down">
+          <div class="col-6 col-xl-2 aos-init aos-animate" data-aos="fade-down">
             <h1 class="mb-0"><a href="index.html" class="text-black h2 mb-0"></a></h1>
           </div>
-          <div class="col-10 col-md-8 d-none d-xl-block" data-aos="fade-down">
+          <div class="col-10 col-md-8 d-none d-xl-block aos-init aos-animate" data-aos="fade-down">
             <nav class="site-navigation position-relative text-right text-lg-center" role="navigation">
 
               <ul class="site-menu js-clone-nav mx-auto d-none d-lg-block" style="font-family:Sarina">
@@ -132,10 +165,10 @@ margin-right: auto;
         </div>
         
 
-        </div>
-      </div>
+        </header></div>
       
-    </header>
+      
+    
 
 	<div class="mySlides" style="display: block;">
       <img src="images/SNB1.png" style="margin-top:30px;" class="center">
@@ -158,20 +191,30 @@ margin-right: auto;
   </div>
 
   <div class="row" style="padding: 20px">
-    <div class="column">
+    <div class="column container">
       <img class="demo cursor active" src="images/SNB1.png" style="width:100%" onclick="currentSlide(1)">
+        <div class="overlay">
+            <div class="text"><em>Social</em></div></div>
     </div>
     <div class="column"> 
       <img class="demo cursor" src="images/SNB2.png" style="width:100%" onclick="currentSlide(2)">
+	     <div class="overlay">
+            <div class="text"><em>Social</em></div></div>
     </div>
     <div class="column">
       <img class="demo cursor" src="images/bc1.png" style="width:100%" onclick="currentSlide(3)">
+	     <div class="overlay">
+            <div class="text"><em>Business Card</em></div></div>
     </div>
     <div class="column">
       <img class="demo cursor" src="images/bc2.png" style="width:100%" onclick="currentSlide(4)">
+	     <div class="overlay">
+            <div class="text"><em>Business Card</em></div></div>
     </div>
     <div class="column">
       <img class="demo cursor" src="images/YGcover.png" style="width:100%" onclick="currentSlide(5)">
+	     <div class="overlay">
+            <div class="text"><em>Booklet Cover</em></div></div>
     </div>
   </div>
 
@@ -198,5 +241,6 @@ margin-right: auto;
   
     
   
+
 
 </body></html>
