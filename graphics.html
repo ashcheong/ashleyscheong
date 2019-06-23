@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html><head><title>Ashley S. Cheong</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
+	
 
-    <link rel="shortcut icon" type="image/jpg" href="images/siteicon.jpg">
+    <link rel="shortcut icon" type="image/jpg" href="images/siteicon.jpg"/>
 
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     
-    <link href="https://fonts.googleapis.com/css?family=Sarina&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Sarina&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="fonts/icomoon/style.css">
 
     <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -26,87 +27,56 @@
     <link rel="stylesheet" href="css/aos.css">
 
     <link rel="stylesheet" href="css/style.css">
-<style>
-body {
+	
+	 <style>
+		body {
   font-family: Arial;
   margin: 0;
 }
-
 * {
   box-sizing: border-box;
 }
-
+img {
+  vertical-align: middle;
+  width: 40%;
+}
+img.center {
+display: block;
+margin-left: auto;
+margin-right: auto;
+}
+/* Position the image container (needed to position the left and right arrows) */
 .container {
   position: relative;
-  width: 50%;
 }
-
-.image {
-  display: block;
-  width: 100%;
-  height: auto;
-}
-
-.overlay {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 80%;
-  width: 100%;
-  opacity: 0;
-  background-color: #00000;
-}
-
-
-.container:hover .image {
-  opacity: 0.1;
-}
-
-.container:hover .overlay {
-  opacity: 10;
-}
-
-.text {
-  color: black;
-  font-size: 20px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-}
-         
 /* Hide the images by default */
 .mySlides {
   display: none;
 }
-
 /* Add a pointer when hovering over the thumbnail images */
 .cursor {
   cursor: pointer;
 }
-
-
-
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
 /* Six columns side by side */
 .column {
   float: left;
   width: 20%;
 }
-
 /* Add a transparency effect for thumnbail images */
 .demo {
   opacity: 0.6;
 }
-
 .active,
 .demo:hover {
   opacity: 1;
 }
-</style><style type="text/css">.c1-ui-state-hover {background-color:yellow !important; padding:5px !important }</style></head>
-  <body data-aos-easing="slide" data-aos-duration="800" data-aos-delay="0">
+	</style></head>
+  <body>
   
   <div class="site-wrap">
 
@@ -122,7 +92,7 @@ body {
                 <li><a href="/photos">photos</a></li>
                 <li class="active"><a href="/graphics">graphics</a></li>
                 <li><a href="mailto:ashcheong@gmail.com">email</a></li>
-     </ul></div>
+	      </ul></div>
     </div>
     
 
@@ -133,10 +103,10 @@ body {
       <div class="container-fluid">
         <div class="row align-items-center">
           
-          <div class="col-6 col-xl-2 aos-init aos-animate" data-aos="fade-down">
+          <div class="col-6 col-xl-2" data-aos="fade-down">
             <h1 class="mb-0"><a href="index.html" class="text-black h2 mb-0"></a></h1>
           </div>
-          <div class="col-10 col-md-8 d-none d-xl-block aos-init aos-animate" data-aos="fade-down">
+          <div class="col-10 col-md-8 d-none d-xl-block" data-aos="fade-down">
             <nav class="site-navigation position-relative text-right text-lg-center" role="navigation">
 
               <ul class="site-menu js-clone-nav mx-auto d-none d-lg-block" style="font-family:Sarina">
@@ -148,6 +118,7 @@ body {
               </ul>
             </nav>
           </div>
+		
   <div class="col-6 col-xl-2 text-right aos-init aos-animate" data-aos="fade-down">
             <div class="d-none d-xl-inline-block">
               
@@ -161,39 +132,29 @@ body {
         </div>
         
 
-        </header></div>
+        </div>
+      </div>
       
-      
-    
-<div class="container">
-<div class="mySlides" style="display: block;">
-      <img src="images/SNB1.png" style="margin-top:30px;" class="image center">
-        <div class="overlay">
-		<div class="text">Social | <i>Supernatural Body</i></div></div>
+    </header>
+
+	<div class="mySlides" style="display: block;">
+      <img src="images/SNB1.png" style="margin-top:30px;" class="center">
   </div>
 
   <div class="mySlides" style="display: none;">
-      <img src="images/SNB2.png" style="margin-top:30px;" class="image center">
-      <div class="overlay">
-		<div class="text">Social | <i>Supernatural Body</i></div></div>
+      <img src="images/SNB2.png" style="margin-top:30px;" class="center">
   </div>
 
   <div class="mySlides" style="display: none;">
-      <img src="images/bc1.png" style="margin-top:30px;" class="image center">
-	  <div class="overlay">
-		<div class="text">Business Card | <i>Personal</i></div></div>
+      <img src="images/bc1.png" style="margin-top:30px;" class="center">
   </div>
 
   <div class="mySlides" style="display: none;">
-      <img src="images/bc2.png" style="margin-top:30px;" class="image center">
-	  <div class="overlay">
-		<div class="text">Business Card | <i>Personal</i></div></div>
+      <img src="images/bc2.png" style="margin-top:30px;" class="center">
   </div>
   
   <div class="mySlides" style="display: none;">
-      <img src="images/YGcover.png" style="margin-top:30px;" class="image center">
-	  <div class="overlay">
-		<div class="text">Booklet Cover | <i>NYPPC</i></div></div>
+      <img src="images/YGcover.png" style="margin-top:30px;" class="center">
   </div>
 
   <div class="row" style="padding: 20px">
@@ -238,5 +199,4 @@ body {
     
   
 
-
-</div></body></html>
+</body></html>
