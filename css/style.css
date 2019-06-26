@@ -1203,12 +1203,14 @@ body {
   clear: both;
 }
 
+@media (min-width: 320px) and (max-width: 480px) {
+  video {
+    width: 75%;
+  }
+}
+
  $(document).ready(function(){
       $('#lightgallery').lightGallery();
     });
 
-@media (min-width: 320px) and (max-width: 480px) {
-  
-  //CSS
-  
-}
+
