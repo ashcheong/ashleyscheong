@@ -98,7 +98,9 @@ margin-right: auto;
 /* Six columns side by side */
 .column {
   float: left;
-  width: 20%;
+  width: 25%;
+  display: flex;
+  justify-content: center;
 }
 /* Add a transparency effect for thumnbail images */
 .demo {
@@ -108,7 +110,7 @@ margin-right: auto;
 .demo:hover {
   opacity: 1;
 }
-	</style><style type="text/css">.c1-ui-state-hover {background-color:yellow !important; padding:5px !important }</style></head>
+	</style><style type="text/css">.c1-ui-state-hover {background-color:yellow !important; padding:5px !important }</style><style type="text/css">.c1-ui-state-hover {background-color:yellow !important; padding:5px !important }</style></head>
   <body data-aos-easing="slide" data-aos-duration="800" data-aos-delay="0">
   
   <div class="site-wrap">
@@ -175,35 +177,35 @@ margin-right: auto;
   </div>
 
   <div class="mySlides" style="display: none;">
-      <img src="images/SNB2.png" style="margin-top:30px;" class="center">
-  </div>
-
-  <div class="mySlides" style="display: none;">
       <img src="images/bc.png" style="margin-top:30px;" class="center">
   </div>
-  
+
   <div class="mySlides" style="display: none;">
       <img src="images/YGcover.png" style="margin-top:30px;" class="center">
   </div>
+  
+  <div class="mySlides" style="display: none;">
+      <img src="images/SNB2.png" style="margin-top:30px;" class="center">
+  </div>
 
-  <div class="row" style="padding: 20px">
+  <div class="row" style="padding: 30px">
     <div class="column container">
       <img class="demo cursor active" src="images/SNB1.png" style="width:100%">
         <div class="overlay" onclick="currentSlide(1)">
             <div class="text"><em>Social</em></div></div>
     </div>
     <div class="column container">
-      <img class="demo cursor" src="images/SNB2.png" style="width:100%">
+      <img class="demo cursor" src="images/bc.png" style="width:83.5%">
 	     <div class="overlay" onclick="currentSlide(2)">
             <div class="text"><em>Social</em></div></div>
     </div>
     <div class="column container">
-      <img class="demo cursor" src="images/bc.png" style="width:100%">
+      <img class="demo cursor" src="images/YGcover.png" style="width:77%">
 	     <div class="overlay" onclick="currentSlide(3)">
             <div class="text"><em>Business Card</em></div></div>
 	  </div>
     <div class="column container">
-      <img class="demo cursor" src="images/YGcover.png" style="width:100%">
+      <img class="demo cursor" src="images/SNB2.png" style="width:100%">
 	     <div class="overlay" onclick="currentSlide(4)">
             <div class="text"><em>Booklet Cover</em></div></div>
     </div>
@@ -232,6 +234,7 @@ margin-right: auto;
   
     
   
+
 
 
 </body></html>
