@@ -1206,3 +1206,9 @@ body {
  $(document).ready(function(){
       $('#lightgallery').lightGallery();
     });
+
+@media (min-width: 320px) and (max-width: 480px) {
+  
+  //CSS
+  
+}
