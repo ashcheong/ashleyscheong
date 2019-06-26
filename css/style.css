@@ -1205,12 +1205,12 @@ body {
 
 @media (min-width: 320px) and (max-width: 480px) {
   video {
-    width: 75%;
+    width: 90%;
   }
 }
 
- $(document).ready(function(){
+/*  $(document).ready(function(){
       $('#lightgallery').lightGallery();
-    });
+    }); */
 
 
