@@ -28,95 +28,7 @@
 
     <link rel="stylesheet" href="css/style.css">
 	
-	 <style>
-		body {
-  font-family: Arial;
-  margin: 0;
-}
-* {
-  box-sizing: border-box;
-}
-img {
-  vertical-align: middle;
-  width: 40%;
-}
-img.center {
-display: block;
-margin-left: auto;
-margin-right: auto;
-}
-         
-.overlay {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 100%;
-  width: 100%;
-  opacity: 0;
-  background-color: white;
-}
-
-
-.container:hover .image {
-  opacity: 0.1;
-}
-
-.container:hover .overlay {
-  opacity: 10;
-}
-
-.text {
-  text-align: center;
-  color: black;
-  font-size: 20px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-}
-         
-/* Position the image container (needed to position the left and right arrows) */
-.container {
-  position: relative;
-}
-/* Hide the images by default */
-.mySlides {
-  display: none;
-}
-/* Add a pointer when hovering over the thumbnail images */
-.cursor {
-  cursor: pointer;
-}
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover,
-.next:hover {
-  background-color: rgba(0, 0, 0, 0.8);
-}
-/* Six columns side by side */
-.column {
-  float: left;
-  width: 25%;
-  display: flex;
-  justify-content: center;
-}
-/* Add a transparency effect for thumnbail images */
-.demo {
-  opacity: 0.6;
-}
-.active,
-.demo:hover {
-  opacity: 1;
-}
-@media (min-width: 320px) and (max-width: 480px) {
- .column {
-   flex: 0 0 50%;
-   max-height: 150px;
-  }
-}
-	</style><style type="text/css">.c1-ui-state-hover {background-color:yellow !important; padding:5px !important }</style><style type="text/css">.c1-ui-state-hover {background-color:yellow !important; padding:5px !important }</style></head>
+	</head>
   <body data-aos-easing="slide" data-aos-duration="800" data-aos-delay="0">
   
   <div class="site-wrap">
@@ -178,45 +90,17 @@ margin-right: auto;
       
     
 
-	<div class="mySlides" style="display: block;">
-      <img src="images/SNB1.png" style="margin-top:30px;" class="center">
+ <div class="row;"> 
+  <div class="column">
+  <img src="images/SNB1.png" style="width:100%">
+  <img src="images/mreview.png" style="width:100%">
   </div>
-
-  <div class="mySlides" style="display: none;">
-      <img src="images/bc.png" style="margin-top:30px;" class="center">
-  </div>
-
-  <div class="mySlides" style="display: none;">
-      <img src="images/canada.png" style="margin-top:30px;" class="center">
-  </div>
-  
-  <div class="mySlides" style="display: none;">
-      <img src="images/SNB2.png" style="margin-top:30px;" class="center">
-  </div>
-
-  <div class="row" style="padding: 30px">
-    <div class="column container">
-      <img class="demo cursor active" src="images/SNB1.png" style="width:100%">
-        <div class="overlay" onclick="currentSlide(1)">
-            <div class="text"><em>Social</em></div></div>
-    </div>
-    <div class="column container">
-      <img class="demo cursor" src="images/bc.png" style="width:100%">
-	     <div class="overlay" onclick="currentSlide(2)">
-            <div class="text"><em>Business Card</em></div></div>
-    </div>
-    <div class="column container">
-      <img class="demo cursor" src="images/canada.png" style="width:100%">
-	     <div class="overlay" onclick="currentSlide(3)">
-            <div class="text"><em>Social</em></div></div>
-	  </div>
-    <div class="column container">
-      <img class="demo cursor" src="images/SNB2.png" style="width:100%">
-	     <div class="overlay" onclick="currentSlide(4)">
-            <div class="text"><em>Social</em></div></div>
-    </div>
-  </div>
-
+  <div class="column">
+    <img src="images/SNB2.png" style="width:100%">
+    <img src="images/canada.png" style="width:100%">
+       <img src="images/bc.png" style="width:100%">
+  </div>  
+</div>
   
 
   <script src="js/jquery-3.3.1.min.js"></script>
@@ -240,6 +124,7 @@ margin-right: auto;
   
     
   
+
 
 
 
