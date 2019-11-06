@@ -265,7 +265,7 @@ a {
           -webkit-transform: translateY(-50%);
           -ms-transform: translateY(-50%);
           transform: translateY(-50%);
-          font-family: 'Sarina', cursive; }
+          font-family: 'Josefin Sans', sans-serif; }
       .site-navbar .site-navigation .site-menu .has-children .dropdown {
         visibility: hidden;
         opacity: 0;
@@ -440,7 +440,7 @@ a {
       .site-mobile-menu .site-nav-wrap .arrow-collapse:before {
         font-size: 12px;
         z-index: 20;
-        font-family: 'Sarina', cursive;
+        font-family: 'Josefin Sans', sans-serif;
         content: "\f078";
         position: absolute;
         top: 50%;
@@ -1176,7 +1176,7 @@ a {
 
 body {
   margin: 0;
-  font-family: 'Sarina';
+  font-family: 'Josefin Sans', sans-serif;
 }
 
 .header {
